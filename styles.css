@@ -9,7 +9,6 @@
     --current_section-content-size: calc(var(--content-conteiner-size) - var(--10th-size-section));
     --other-content-size: var(--current_section-content-size);
 
-
 }
 
 body {
@@ -22,6 +21,15 @@ header {
     background: aqua;
     height: var(--head-foot-size);
     width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#header-text {
+    padding-left: 10%;
 }
 
 main {
@@ -89,4 +97,12 @@ footer {
     background: aqua;
     width: 100%;
     height: var(--head-foot-size);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#footer-text {
+    padding-right: 10%;
 }
