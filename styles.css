@@ -19,7 +19,7 @@ body {
 
 header {
     background: aqua;
-    height: var(--head-foot-size);
+    min-height: var(--head-foot-size);
     width: 100%;
 
     display: flex;
@@ -33,8 +33,7 @@ header {
 }
 
 main {
-    /*background: olive;*/
-    height: var(--main-tag-size);
+    min-height: var(--main-tag-size);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -42,13 +41,12 @@ main {
 
 #menu {
     background: rosybrown;
-    height: var(--menu-size);
+    min-height: var(--menu-size);
     width: 25%;
 }
 
 #content-container {
-    background: black;
-    height: var(--content-conteiner-size);
+    min-height: var(--content-conteiner-size);
     width: 75%;
     display: flex;
     flex-flow: column wrap;
@@ -56,20 +54,18 @@ main {
 
 #current-section-title {
     background: greenyellow;
-    height: var(--10th-size-section);
+    min-height: var(--10th-size-section);
     width: 100%;
 }
 
 #current-section-content {
-    background: brown;
-    height: var(--current_section-content-size);
+    min-height: var(--current_section-content-size);
     width: 100%;
     display: flex;
 }
 
 #main-and-additional-info {
-    background: green;
-    height: var(--current_section-content-size);
+    min-height: var(--current_section-content-size);
     width: 75%;
     display: flex;
     flex-flow: column;
@@ -77,26 +73,26 @@ main {
 
 #main-window {
     background: blanchedalmond;
-    height: var(--main-window-size);
+    min-height: var(--main-window-size);
     width: 100%;
 }
 
 #additional-info {
     background: greenyellow;
-    height: var(--10th-size-section);
+    min-height: var(--10th-size-section);
     width: 100%;
 }
 
 #other-content {
     background: rosybrown;
-    height: var(--other-content-size);
+    min-height: var(--other-content-size);
     width: 25%;
 }
 
 footer {
     background: aqua;
     width: 100%;
-    height: var(--head-foot-size);
+    min-height: var(--head-foot-size);
 
     display: flex;
     justify-content: flex-end;
