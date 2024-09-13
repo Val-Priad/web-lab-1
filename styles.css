@@ -1,0 +1,92 @@
+:root {
+    --head-foot-size: 20vh;
+    --main-tag-size: calc(100vh - 2 * var(--head-foot-size));
+    --menu-size: var(--main-tag-size);
+    --content-conteiner-size: var(--main-tag-size);
+    --10th-size-section: calc(var(--main-tag-size) * 1 / 6);
+    --main-window-size: calc(var(--main-tag-size) -
+    2 * var(--10th-size-section));
+    --current_section-content-size: calc(var(--content-conteiner-size) - var(--10th-size-section));
+    --other-content-size: var(--current_section-content-size);
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    background: aqua;
+    height: var(--head-foot-size);
+    width: 100%;
+}
+
+main {
+    /*background: olive;*/
+    height: var(--main-tag-size);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu {
+    background: rosybrown;
+    height: var(--menu-size);
+    width: 25%;
+}
+
+#content-container {
+    background: black;
+    height: var(--content-conteiner-size);
+    width: 75%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#current-section-title {
+    background: greenyellow;
+    height: var(--10th-size-section);
+    width: 100%;
+}
+
+#current-section-content {
+    background: brown;
+    height: var(--current_section-content-size);
+    width: 100%;
+    display: flex;
+}
+
+#main-and-additional-info {
+    background: green;
+    height: var(--current_section-content-size);
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+}
+
+#main-window {
+    background: blanchedalmond;
+    height: var(--main-window-size);
+    width: 100%;
+}
+
+#additional-info {
+    background: greenyellow;
+    height: var(--10th-size-section);
+    width: 100%;
+}
+
+#other-content {
+    background: rosybrown;
+    height: var(--other-content-size);
+    width: 25%;
+}
+
+footer {
+    background: aqua;
+    width: 100%;
+    height: var(--head-foot-size);
+}
