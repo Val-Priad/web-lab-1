@@ -111,8 +111,7 @@ main {
     width: 25%;
 
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-flow: column;
 }
 
 footer {
@@ -148,8 +147,25 @@ a:hover {
     font-size: 1.4em;
 }
 
-#menu ol, #other-content ul {
+#menu ol {
     font-size: 2em;
+}
+
+#other-content h1 {
+    font-size: clamp(0.5em, 2em, 2em);
+}
+
+#other-content ul {
+    font-size: clamp(0.5em, 1.5em, 2em);
+}
+
+#other-content h1, #other-content ul {
+    padding-left: clamp(10%, 20%, 30%);
+    padding-right: clamp(10%, 10%, 20%);
+}
+
+#other-content ul {
+    margin-top: 0;
 }
 
 .additional-info-style {
