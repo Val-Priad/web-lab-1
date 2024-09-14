@@ -143,6 +143,21 @@ a:hover {
     color: red;
 }
 
-.main-window-ul-style {
+
+#main-window ul, #main-window p {
     font-size: 1.4em;
+}
+
+#menu ol, #other-content ul {
+    font-size: 1.5em;
+}
+
+.additional-info-style {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
