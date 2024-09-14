@@ -149,7 +149,7 @@ a:hover {
 }
 
 #menu ol, #other-content ul {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .additional-info-style {
@@ -160,4 +160,8 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+}
+
+#menu h1 {
+    font-size: 3em;
 }
