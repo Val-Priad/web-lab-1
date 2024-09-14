@@ -46,8 +46,9 @@ main {
     width: 25%;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 9em;
 }
 
 #content-container {
@@ -110,8 +111,8 @@ main {
     width: 25%;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 footer {
@@ -142,6 +143,6 @@ a:hover {
     color: red;
 }
 
-.zheng-text {
+.main-window-ul-style {
     font-size: 1.4em;
 }
