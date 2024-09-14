@@ -43,6 +43,10 @@ main {
     background: rosybrown;
     min-height: var(--menu-size);
     width: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #content-container {
@@ -56,6 +60,10 @@ main {
     background: greenyellow;
     min-height: var(--10th-size-section);
     width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #current-section-content {
@@ -78,6 +86,10 @@ main {
     min-height: var(--main-window-size);
     width: 100%;
     flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #additional-info {
@@ -85,12 +97,20 @@ main {
     min-height: var(--10th-size-section);
     width: 100%;
     /*flex-grow: 1;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #other-content {
     background: rosybrown;
     min-height: var(--other-content-size);
     width: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -105,4 +125,9 @@ footer {
 
 #footer-text {
     padding-right: 10%;
+}
+
+.content-padding {
+    padding-left: 15%;
+    padding-right: 15%;
 }
