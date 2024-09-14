@@ -40,7 +40,8 @@ main {
 }
 
 #menu {
-    background: rosybrown;
+    /*background: #f0d1cb url("images/menu_pattern_opacity_50.png");*/
+    background: #e2cb87 url("images/sakura_pattern_oppacity_20.png");
     min-height: var(--menu-size);
     width: 25%;
 
@@ -57,7 +58,7 @@ main {
 }
 
 #current-section-title {
-    background: greenyellow;
+    background: url("images/sky_pattern_opacity_40.png");
     min-height: var(--10th-size-section);
     width: 100%;
 
@@ -82,7 +83,7 @@ main {
 }
 
 #main-window {
-    background: blanchedalmond;
+    background: url("images/sky_pattern_opacity_40.png");
     min-height: var(--main-window-size);
     width: 100%;
     flex-grow: 1;
@@ -93,7 +94,7 @@ main {
 }
 
 #additional-info {
-    background: greenyellow;
+    background: url("images/watter-pattern-opacity-20.png");
     min-height: var(--10th-size-section);
     width: 100%;
     /*flex-grow: 1;*/
@@ -104,7 +105,7 @@ main {
 }
 
 #other-content {
-    background: rosybrown;
+    background: #e2cb87 url("images/sakura_pattern_oppacity_20.png");
     min-height: var(--other-content-size);
     width: 25%;
 
@@ -130,4 +131,17 @@ footer {
 .content-padding {
     padding-left: 15%;
     padding-right: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: red;
+}
+
+.zheng-text {
+    font-size: 1.4em;
 }
