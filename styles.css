@@ -9,6 +9,12 @@
     --current_section-content-size: calc(var(--content-conteiner-size) - var(--10th-size-section));
     --other-content-size: var(--current_section-content-size);
 
+    --menu-font-sizes: calc(0.9vw + 0.9vh);
+    --main-window-font-sizes: calc(1vw + 1vh);
+    --aditional-info-font-sizes: calc(1.3vw + 1.3vh);
+    --header-footer-font-size: var(--menu-font-sizes);
+    --current-section-title-font-size: var(--main-window-font-sizes);
+
 }
 
 body {
@@ -43,7 +49,7 @@ main {
     /*background: #f0d1cb url("images/menu_pattern_opacity_50.png");*/
     background: #e2cb87 url("images/sakura_pattern_oppacity_20.png");
     min-height: var(--menu-size);
-    width: 25%;
+    width: 20%;
 
     display: flex;
     justify-content: flex-start;
@@ -53,7 +59,7 @@ main {
 
 #content-container {
     min-height: var(--content-conteiner-size);
-    width: 75%;
+    width: 80%;
     display: flex;
     flex-flow: column wrap;
 }
@@ -143,25 +149,31 @@ a:hover {
 }
 
 
-#main-window ul, #main-window p {
-    font-size: 1.4em;
+#main-window ul,
+#main-window p,
+#main-window h1,
+#main-window h2,
+#main-window h3,
+#main-window h4,
+#main-window h5,
+#main-window h6 {
+    font-size: var(--main-window-font-sizes);
 }
+
+
 
 #menu ol {
-    font-size: 2em;
-}
-
-#other-content h1 {
-    font-size: clamp(0.5em, 2em, 2em);
-}
-
-#other-content ul {
-    font-size: clamp(0.5em, 1.5em, 2em);
+    font-size: var(--menu-font-sizes);
 }
 
 #other-content h1, #other-content ul {
-    padding-left: clamp(10%, 20%, 30%);
-    padding-right: clamp(10%, 10%, 20%);
+    font-size: var(--menu-font-sizes);
+}
+
+
+#other-content h1, #other-content ul {
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 #other-content ul {
@@ -170,7 +182,7 @@ a:hover {
 
 .additional-info-style {
     text-align: center;
-    font-size: 1.8em;
+    font-size: var(--aditional-info-font-sizes);
 }
 
 img {
@@ -179,5 +191,13 @@ img {
 }
 
 #menu h1 {
-    font-size: 3em;
+    font-size: var(--menu-font-sizes);
+}
+
+#header-text, #footer-text {
+    font-size: var(--header-footer-font-size);
+}
+
+#current-section-title h1 {
+    font-size: var(--current-section-title-font-size);
 }
