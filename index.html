@@ -7,10 +7,10 @@
 </head>
 <body>
 <header>
-    <h1 id="header-text">Mythical Creatures</h1>
+    <h1 class="header-text">Mythical Creatures</h1>
 </header>
 <main>
-    <div id="menu">
+    <div class="menu">
         <div class="content-padding">
             <h1>Menu</h1>
             <ol>
@@ -23,15 +23,15 @@
             </ol>
         </div>
     </div>
-    <div id="content-container">
-        <div id="current-section-title">
+    <div class="content-container">
+        <div class="current-section-title">
             <div class="content-padding">
                 <h1>What is "Classic of Mountains and Seas"</h1>
             </div>
         </div>
-        <div id="current-section-content">
-            <div id="main-and-additional-info">
-                <div id="main-window">
+        <div class="current-section-content">
+            <div class="main-and-additional-info">
+                <div class="main-window">
                     <div class="content-padding">
                         <h1>Classic of Mountains and Seas</h1>
                         <p>The <strong>Classic of Mountains and Seas</strong>
@@ -83,13 +83,23 @@
                             art, and popular culture.</p>
                     </div>
                 </div>
-                <div id="additional-info">
+                <div class="additional-info">
                     <div class="content-padding additional-info-style">
-                        <h3>Explore menu to see mythological creatures!</h3>
+                        <h3>Explore the menu to see mythological
+                            creatures or press on the picture</h3>
+                        <img src="images/for_map.png"
+                             alt="mythological creatures"
+                             usemap="#creatures_map">
+                        <map name="creatures_map">
+                            <area shape="rect" coords="0, 0, 768, 310"
+                              href="zheng.html" alt="zheng">
+                            <area shape="rect" coords="0, 310, 768, 620"
+                                  href="kumiho.html" alt="kumiho">
+                        </map>
                     </div>
                 </div>
             </div>
-            <div id="other-content">
+            <div class="other-content">
                 <h1>Page content</h1>
                 <ul>
                     <li><a href="#geography">Geographical Descriptions</a>
@@ -103,7 +113,7 @@
     </div>
 </main>
 <footer>
-    <h1 id="footer-text">Book "Classics of Mountains and Seas"</h1>
+    <h1 class="footer-text">Book "Classics of Mountains and Seas"</h1>
 </footer>
 
 </body>

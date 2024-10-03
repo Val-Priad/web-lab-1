@@ -34,7 +34,7 @@ header {
 }
 
 
-#header-text {
+.header-text {
     padding-left: 10%;
 }
 
@@ -45,7 +45,7 @@ main {
     flex-wrap: wrap;
 }
 
-#menu {
+.menu {
     background: #e2cb87 url("images/sakura_pattern_oppacity_20.png");
     min-height: var(--menu-size);
     width: 20%;
@@ -56,14 +56,14 @@ main {
     padding-top: 9em;
 }
 
-#content-container {
+.content-container {
     min-height: var(--content-conteiner-size);
     width: 80%;
     display: flex;
     flex-flow: column wrap;
 }
 
-#current-section-title {
+.current-section-title {
     background: url("images/sky_pattern_opacity_40.png");
     min-height: var(--10th-size-section);
     width: 100%;
@@ -73,14 +73,14 @@ main {
     align-items: center;
 }
 
-#current-section-content {
+.current-section-content {
     min-height: var(--current_section-content-size);
     width: 100%;
     display: flex;
     flex-grow: 1;
 }
 
-#main-and-additional-info {
+.main-and-additional-info {
     min-height: var(--current_section-content-size);
     width: 75%;
     display: flex;
@@ -88,7 +88,7 @@ main {
     flex-grow: 1;
 }
 
-#main-window {
+.main-window {
     background: url("images/sky_pattern_opacity_40.png");
     min-height: var(--main-window-size);
     width: 100%;
@@ -99,7 +99,7 @@ main {
     align-items: center;
 }
 
-#additional-info {
+.additional-info {
     background: url("images/watter-pattern-opacity-20.png");
     min-height: var(--10th-size-section);
     width: 100%;
@@ -109,7 +109,7 @@ main {
     align-items: center;
 }
 
-#other-content {
+.other-content {
     background: #e2cb87 url("images/sakura_pattern_oppacity_20.png");
     min-height: var(--other-content-size);
     width: 25%;
@@ -128,7 +128,7 @@ footer {
     align-items: center;
 }
 
-#footer-text {
+.footer-text {
     padding-right: 10%;
 }
 
@@ -147,34 +147,34 @@ a:hover {
 }
 
 
-#main-window ul,
-#main-window p,
-#main-window h1,
-#main-window h2,
-#main-window h3,
-#main-window h4,
-#main-window h5,
-#main-window h6 {
+.main-window ul,
+.main-window p,
+.main-window h1,
+.main-window h2,
+.main-window h3,
+.main-window h4,
+.main-window h5,
+.main-window h6 {
     font-size: var(--main-window-font-sizes);
 }
 
 
 
-#menu ol {
+.menu ol {
     font-size: var(--menu-font-sizes);
 }
 
-#other-content h1, #other-content ul {
+.other-content h1, .other-content ul {
     font-size: var(--menu-font-sizes);
 }
 
 
-#other-content h1, #other-content ul {
+.other-content h1, .other-content ul {
     padding-left: 20%;
     padding-right: 20%;
 }
 
-#other-content ul {
+.other-content ul {
     margin-top: 0;
 }
 
@@ -188,14 +188,14 @@ img {
     height: auto;
 }
 
-#menu h1 {
+.menu h1 {
     font-size: var(--menu-font-sizes);
 }
 
-#header-text, #footer-text {
+.header-text, .footer-text {
     font-size: var(--header-footer-font-size);
 }
 
-#current-section-title h1 {
+.current-section-title h1 {
     font-size: var(--current-section-title-font-size);
 }
