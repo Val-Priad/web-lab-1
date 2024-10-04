@@ -160,7 +160,7 @@ a:hover {
 
 
 
-.menu ol {
+.menu ol, .menu ul {
     font-size: var(--menu-font-sizes);
 }
 
@@ -188,7 +188,7 @@ img {
     height: auto;
 }
 
-.menu h1 {
+.menu h1, .menu h2 {
     font-size: var(--menu-font-sizes);
 }
 
