@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    gap: 0;
+}
+.box {
+    display: grid;
+    grid-template-areas:
+    "menu-box title-box title-box"
+    "menu-box main-box contents-box"
+    "menu-box additional-box contents-box";
+    grid-template-columns: 20% 60% 20%;
+}
+
+.menu-box {
+    grid-area: menu-box;
+}
+
+.title-box {
+    grid-area: title-box;
+}
+
+.main-box {
+    grid-area: main-box;
+}
+
+.additional-box {
+    background: url("../images/watter-pattern-opacity-20.png");
+    grid-area: additional-box;
+}
+
+.contents-box {
+    grid-area: contents-box;
+}
+
+.menu-box, .contents-box{
+    background: #e2cb87 url("../images/sakura_pattern_oppacity_20.png");
+}
+
+.main-box, .title-box {
+    background: url("../images/sky_pattern_opacity_40.png")
+}
+
+header, footer {
+    background: blanchedalmond url("../images/bar_pattern_oppacity_50.png");
+    height: 20vh;
+}
+
+.header-text {
+    display: grid;
+    align-items: center;
+    height: 20vh;
+    margin: 0 0 0 10%;
+}
+
+.footer-text {
+    display: grid;
+    align-items: center;
+    height: 20vh;
+    margin: 0 0 0 55%;
+}
+
+.menu-box, .contents-box {
+    padding: 3vh 10% 0 10%;
+    font-size: calc(0.9vh + 0.9vw);
+}
+
+.title-box, .additional-box {
+    padding: 0 10% 0 10%;
+    font-size: calc(1vh + 1vw);
+}
+
+.main-box {
+    padding: 0 10% 0 10%;
+    font-size: calc(0.9vh + 0.9vw);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.additional-box {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: red;
+}
