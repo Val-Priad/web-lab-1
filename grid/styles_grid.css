@@ -44,31 +44,38 @@ body {
 
 header, footer {
     background: blanchedalmond url("../images/bar_pattern_oppacity_50.png");
-    height: 20vh;
+    min-height: 20vh;
+    font-size: calc(0.75vh + 0.75vw);
 }
 
-.header-text {
+header {
     display: grid;
     align-items: center;
-    height: 20vh;
-    margin: 0 0 0 10%;
+    padding-left: 10%;
+}
+footer {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    padding-right: 10%;
 }
 
-.footer-text {
-    display: grid;
-    align-items: center;
-    height: 20vh;
-    margin: 0 0 0 55%;
+.menu-box {
+    padding: 15.5vh 10% 0 10%;
+}
+
+.contents-box {
+    padding: 3vh 10% 0 10%;
 }
 
 .menu-box, .contents-box {
-    padding: 3vh 10% 0 10%;
     font-size: calc(0.9vh + 0.9vw);
 }
 
 .title-box, .additional-box {
     padding: 0 10% 0 10%;
-    font-size: calc(1vh + 1vw);
+    font-size: calc(0.8vh + 0.8vw);
+    text-align: center;
 }
 
 .main-box {
@@ -82,8 +89,6 @@ img {
 }
 
 .additional-box {
-    display: grid;
-    place-items: center;
     text-align: center;
 }
 
