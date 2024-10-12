@@ -12,8 +12,55 @@ body {
 }
 
 
+.menu-box {
+    grid-area: menu-box;
+}
 
-@media (min-width: 320px) {
+.title-box {
+    grid-area: title-box;
+}
+
+.main-box {
+    grid-area: main-box;
+}
+
+.additional-box {
+    background: url("../images/watter-pattern-opacity-20.png");
+    grid-area: additional-box;
+}
+
+.contents-box {
+    grid-area: contents-box;
+}
+
+.menu-box, .contents-box{
+    background: #e2cb87 url("../images/sakura_pattern_oppacity_20.png");
+}
+
+.main-box, .title-box {
+    background: url("../images/sky_pattern_opacity_40.png")
+}
+
+header, footer {
+    background: blanchedalmond url("../images/bar_pattern_oppacity_50.png");
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
     .box {
         display: grid;
         grid-template-areas:
@@ -78,9 +125,7 @@ body {
     }
 }
 
-
-
-@media (min-width: 550px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .box {
         display: grid;
         grid-template-areas:
@@ -93,16 +138,18 @@ body {
     header, footer {
         min-height: 20vh;
         font-size: calc(0.75vh + 0.75vw);
-        display: grid;
     }
 
     header {
+        display: flex;
+        justify-content: flex-start;
         align-items: center;
         padding-left: 10%;
     }
 
     footer {
-        justify-items: end;
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
         padding-right: 10%;
     }
@@ -112,7 +159,7 @@ body {
     }
 
     .contents-box {
-        padding: 3rem 10% 0 15%;
+        padding: 2rem 10% 0 20%;
     }
 
     .menu-box br {
@@ -120,11 +167,11 @@ body {
     }
 
     .menu-box ol, .menu-box ul, .contents-box ul{
-        font-size: 1.9rem;
+        font-size: 1.3rem;
     }
 
     .menu-box h1, .contents-box h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .title-box, .additional-box {
@@ -141,7 +188,7 @@ body {
     }
 
     .main-box {
-        padding: 0 15% 0 15%;
+        padding: 1rem 15%;
         font-size: calc(0.9vh + 0.9vw);
     }
 
@@ -154,49 +201,81 @@ body {
     }
 }
 
-.menu-box {
-    grid-area: menu-box;
-}
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .box {
+        display: grid;
+        grid-template-areas:
+    "menu-box title-box title-box"
+    "menu-box main-box contents-box"
+    "menu-box additional-box contents-box";
+        grid-template-columns: 20% 60% 20%;
+    }
 
-.title-box {
-    grid-area: title-box;
-}
+    header, footer {
+        min-height: 20vh;
+        font-size: calc(0.85vh + 0.85vw);
+    }
 
-.main-box {
-    grid-area: main-box;
-}
+    header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10%;
+    }
 
-.additional-box {
-    background: url("../images/watter-pattern-opacity-20.png");
-    grid-area: additional-box;
-}
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10%;
+    }
 
-.contents-box {
-    grid-area: contents-box;
-}
+    .menu-box {
+        padding: 6rem 10% 0 20%;
+    }
 
-.menu-box, .contents-box{
-    background: #e2cb87 url("../images/sakura_pattern_oppacity_20.png");
-}
+    .contents-box {
+        padding: 2rem 10% 0 20%;
+    }
 
-.main-box, .title-box {
-    background: url("../images/sky_pattern_opacity_40.png")
-}
+    .menu-box br {
+        margin: 1rem;
+    }
 
-header, footer {
-    background: blanchedalmond url("../images/bar_pattern_oppacity_50.png");
-}
+    .menu-box ol, .menu-box ul, .contents-box ul{
+        font-size: 1.8rem;
+    }
 
-img {
-    height: auto;
-    max-width: 100%;
-}
+    .menu-box h1, .contents-box h1 {
+        font-size: 2rem;
+    }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+    .title-box, .additional-box {
+        min-height: 10vh;
+    }
 
-a:hover {
-    color: red;
+    .title-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(0.9vh + 0.9vw);
+        text-align: center;
+    }
+
+    .main-box {
+        padding: 1rem 15%;
+        font-size: calc(1.2vh + 1.2vw);
+    }
+
+    .additional-box {
+        display: flex;
+        flex-direction: column;
+        padding: 2% 15% 2% 15%;
+        text-align: center;
+    }
+
+    .additional-box {
+        font-size: 1.35rem;
+    }
 }
