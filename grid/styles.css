@@ -70,11 +70,15 @@ body {
 
     .additional-box {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 1rem 2rem;
+        text-align: center;
     }
 }
+
+
 
 @media (min-width: 550px) {
     .box {
@@ -111,8 +115,16 @@ body {
         padding: 3rem 10% 0 15%;
     }
 
-    .menu-box, .contents-box {
-        font-size: calc(0.9vh + 0.9vw);
+    .menu-box br {
+        margin: 1rem;
+    }
+
+    .menu-box ol, .menu-box ul, .contents-box ul{
+        font-size: 1.9rem;
+    }
+
+    .menu-box h1, .contents-box h1 {
+        font-size: 2rem;
     }
 
     .title-box, .additional-box {
