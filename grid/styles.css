@@ -1,8 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: 0;
+}
+
+
+
+@media (min-width: 320px) {
+    .box {
+        display: grid;
+        grid-template-areas:
+    "menu-box"
+    "title-box"
+    "contents-box"
+    "main-box"
+    "additional-box";
+    }
+
+    header, footer {
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+        text-align: center;
+    }
+
+    .menu-box {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .menu-box ol, .menu-box ul, .contents-box ul {
+        font-size: 1.2rem;
+    }
+
+    .title-box {
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .contents-box {
+        padding: 1rem;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-box {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .additional-box {
+        padding: 1rem 2rem;
+    }
 }
 
 @media (min-width: 550px) {
@@ -14,7 +82,63 @@ body {
     "menu-box additional-box contents-box";
         grid-template-columns: 20% 60% 20%;
     }
+
+    header, footer {
+        min-height: 20vh;
+        font-size: calc(0.75vh + 0.75vw);
+        display: grid;
+    }
+
+    header {
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    footer {
+        justify-items: end;
+        align-items: center;
+        padding-right: 10%;
+    }
+
+    .menu-box {
+        padding: 6rem 10% 0 20%;
+    }
+
+    .contents-box {
+        padding: 3rem 10% 0 15%;
+    }
+
+    .menu-box, .contents-box {
+        font-size: calc(0.9vh + 0.9vw);
+    }
+
+    .title-box, .additional-box {
+        min-height: 10vh;
+    }
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(0.8vh + 0.8vw);
+        text-align: center;
+    }
+
+    .main-box {
+        padding: 0 15% 0 15%;
+        font-size: calc(0.9vh + 0.9vw);
+    }
+
+    .additional-box {
+        display: flex;
+        flex-direction: column;
+        padding: 2% 15% 2% 15%;
+        font-size: calc(1vh + 1vh);
+        text-align: center;
+    }
 }
+
 .menu-box {
     grid-area: menu-box;
 }
@@ -46,59 +170,11 @@ body {
 
 header, footer {
     background: blanchedalmond url("../images/bar_pattern_oppacity_50.png");
-    min-height: 20vh;
-    font-size: calc(0.75vh + 0.75vw);
-}
-
-header {
-    display: grid;
-    align-items: center;
-    padding-left: 10%;
-}
-footer {
-    display: grid;
-    justify-items: end;
-    align-items: center;
-    padding-right: 10%;
-}
-
-.menu-box {
-    padding: 11vh 10% 0 10%;
-}
-
-.contents-box {
-    padding: 3vh 10% 0 10%;
-}
-
-.menu-box, .contents-box {
-    font-size: calc(0.9vh + 0.9vw);
-}
-
-.title-box, .additional-box {
-    padding: 0 10% 0 10%;
-    text-align: center;
-}
-
-.title-box {
-    font-size: calc(0.8vh + 0.8vw);
-}
-
-.additional-box {
-    font-size: calc(1vh + 1vh);
-}
-
-.main-box {
-    padding: 0 10% 0 10%;
-    font-size: calc(0.9vh + 0.9vw);
 }
 
 img {
     height: auto;
     max-width: 100%;
-}
-
-.additional-box {
-    text-align: center;
 }
 
 a {
