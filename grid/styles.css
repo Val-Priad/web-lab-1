@@ -4,15 +4,17 @@ body {
     grid-template-rows: auto 1fr auto;
     gap: 0;
 }
-.box {
-    display: grid;
-    grid-template-areas:
+
+@media (min-width: 550px) {
+    .box {
+        display: grid;
+        grid-template-areas:
     "menu-box title-box title-box"
     "menu-box main-box contents-box"
     "menu-box additional-box contents-box";
-    grid-template-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+    }
 }
-
 .menu-box {
     grid-area: menu-box;
 }
