@@ -74,8 +74,15 @@ footer {
 
 .title-box, .additional-box {
     padding: 0 10% 0 10%;
-    font-size: calc(0.8vh + 0.8vw);
     text-align: center;
+}
+
+.title-box {
+    font-size: calc(0.8vh + 0.8vw);
+}
+
+.additional-box {
+    font-size: calc(2vh + 2vh);
 }
 
 .main-box {
